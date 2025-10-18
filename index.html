@@ -16,12 +16,13 @@
         <section class="intro-section">
           <figure class="img-container">
             <img
+              data-testid="test-user-avatar"
               src="/assets/images/professional-image.jpg"
               alt="An professional headshot image of profile-card owner"
             />
           </figure>
           <div class="name-container">
-            <h1>Timmy Alade</h1>
+            <h1 data-testid="test-user-name">Timmy Alade</h1>
             <p>25 / Male</p>
           </div>
         </section>
@@ -29,7 +30,7 @@
         <section class="bio-section">
           <div>
             <h2>Bio</h2>
-            <p class="bio-details">
+            <p class="bio-details" data-testid="test-user-bio">
               Hey stranger, I’m Timmy — a Frontend Developer passionate about
               turning ideas into beautiful, functional web experiences. I build
               with HTML, CSS, JavaScript, and React, focusing on clean design,
@@ -40,7 +41,7 @@
 
           <div class="hobbies-container">
             <h3>Hobbies</h3>
-            <ul class="hobbies">
+            <ul class="hobbies" data-testid="test-user-hobbies">
               <li>Debugging</li>
               <li>Melodies</li>
               <li>Football</li>
@@ -50,7 +51,7 @@
 
           <div class="dislikes-container">
             <h3>Dislikes</h3>
-            <ul class="dislikes">
+            <ul class="dislikes" data-testid="test-user-dislikes">
               <li>Lateness</li>
               <li>Chaos</li>
               <li>Deceit</li>
@@ -62,8 +63,8 @@
 
         <section class="social-section">
           <nav class="social-container">
-            <ul>
-              <li>
+            <ul data-testid="test-user-social-links">
+              <li data-testid="test-user-social-x">
                 <a
                   href="https://x.com/DraxTimmy"
                   target="_blank"
@@ -71,7 +72,7 @@
                   ><i class="fa-brands fa-square-x-twitter"></i
                 ></a>
               </li>
-              <li>
+              <li data-testid="test-user-social-linkedin">
                 <a
                   href="https://www.linkedin.com/in/alade-oluwatimileyin-99177b250/"
                   target="_blank"
@@ -79,7 +80,7 @@
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </li>
-              <li>
+              <li data-testid="test-user-social-github">
                 <a
                   href="https://github.com/Timmydrax"
                   target="_blank"
@@ -87,7 +88,7 @@
                   ><i class="fa-brands fa-square-github"></i
                 ></a>
               </li>
-              <li>
+              <li data-testid="test-user-social-instagram">
                 <a
                   href="https://www.instagram.com/timmydrax101/"
                   target="_blank"
