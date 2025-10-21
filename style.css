@@ -28,6 +28,10 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Darker Grotesque", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
 }
 
 /* 6. Improve media defaults */
@@ -87,11 +91,11 @@ h6 {
 .profile-wrapper {
   min-height: 100vh;
   width: 100%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
   padding: 2rem;
 }
 
@@ -211,11 +215,11 @@ h6 {
 
 .contact-wrapper {
   min-height: 100vh;
+  max-width: 1280px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
   padding: 2rem;
 }
 
@@ -231,14 +235,80 @@ h6 {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px #cecece;
 
   > div {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 
-    > input {
-      padding: 0.25rem;
+    > label {
+      font-weight: 600;
     }
+
+    > input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.25rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    > textarea {
+      max-width: 100%;
+      resize: none;
+      height: 150px;
+    }
+
+    > input:focus,
+    textarea:focus {
+      border-color: transparent;
+      box-shadow: 0 0 0 2px #dedede;
+    }
+  }
+
+  > button {
+    background-color: #121212;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.success {
+  color: #28a745; /* green success text */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.success.show {
+  opacity: 1;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 0rem;
   }
 }

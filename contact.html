@@ -12,7 +12,7 @@
   </head>
   <body>
     <header></header>
-    <main class="contact-wrapper">
+    <main class="contact-wrapper" data-testid="test-contact-page">
       <section class="left-section">
         <div>
           <h1>Get in Touch with us</h1>
@@ -35,7 +35,12 @@
       </section>
 
       <section class="right-section">
-        <form class="form-container" action="">
+        <form
+          class="form-container"
+          action=""
+          id="contact-form"
+          data-testid="test-contact-form"
+        >
           <div>
             <label for="name">Full Name</label>
             <input
@@ -43,8 +48,15 @@
               name="name"
               id="name"
               placeholder="John Doe"
+              data-testid="test-contact-name"
+              aria-describedby="error-name"
               required
             />
+            <p
+              id="error-name"
+              data-testid="test-contact-error-name"
+              class="error"
+            ></p>
           </div>
 
           <div>
@@ -54,8 +66,15 @@
               name="email"
               id="email"
               placeholder="johndoe@gmail.com"
+              data-testid="test-contact-email"
+              aria-describedby="error-email"
               required
             />
+            <p
+              id="error-email"
+              data-testid="test-contact-error-email"
+              class="error"
+            ></p>
           </div>
 
           <div>
@@ -65,8 +84,15 @@
               name="subject"
               id="subject"
               placeholder="How can we help?"
+              data-testid="test-contact-subject"
+              aria-describedby="error-subject"
               required
             />
+            <p
+              id="error-subject"
+              data-testid="test-contact-error-subject"
+              class="error"
+            ></p>
           </div>
 
           <div>
@@ -75,11 +101,26 @@
               name="message"
               id="message"
               placeholder="Tell us more about your enquiry..."
+              data-testid="test-contact-message"
+              aria-describedby="error-message"
               required
             ></textarea>
+            <p
+              id="error-message"
+              data-testid="test-contact-error-message"
+              class="error"
+            ></p>
           </div>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" data-testid="test-contact-submit">
+            Send Message
+          </button>
+
+          <p
+            id="success-message"
+            data-testid="test-contact-success"
+            class="success"
+          ></p>
         </form>
       </section>
     </main>
