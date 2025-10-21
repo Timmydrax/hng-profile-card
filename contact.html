@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ea749a88b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="contact-wrapper">
+      <section class="left-section">
+        <div>
+          <h1>Get in Touch with us</h1>
+          <p>
+            We're here to help! Whether you have a question about our services,
+            need assistance with your account, or want to provide feedback, our
+            team is ready to assist you.
+          </p>
+        </div>
+
+        <div>
+          <h2>Email:</h2>
+          <p>timmydrax@gmail.com</p>
+        </div>
+        <div>
+          <h2>Phone:</h2>
+          <p>(+234) 903 6716 225</p>
+        </div>
+        <p>Available Monday to Friday, 9:00 AM - 6:00 PM GMT</p>
+      </section>
+
+      <section class="right-section">
+        <form class="form-container" action="">
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="How can we help?"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="messsage">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Tell us more about your enquiry..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
