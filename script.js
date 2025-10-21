@@ -1,6 +1,7 @@
 const formElement = document.getElementById("contact-form");
 const successMsg = document.getElementById("success-message");
 
+// Logic for Timer
 document.addEventListener("DOMContentLoaded", () => {
   const timeElement = document.getElementById("time");
 
