@@ -44,6 +44,10 @@ if (formElement) {
       document.getElementById("error-name").textContent =
         "Full name is required.";
       isValid = false;
+    } else if (name.length < 3) {
+      document.getElementById("error-name").textContent =
+        "Full name must be at least 3 Characters long.";
+      isValid = false;
     }
 
     // Validate email
@@ -59,6 +63,10 @@ if (formElement) {
     if (!subject) {
       document.getElementById("error-subject").textContent =
         "Subject is required.";
+      isValid = false;
+    } else if (subject.length < 3) {
+      document.getElementById("error-subject").textContent =
+        "Subject must be at least 3 Characters long.";
       isValid = false;
     }
 
