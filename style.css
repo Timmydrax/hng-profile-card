@@ -229,6 +229,35 @@ h6 {
   padding: 1rem;
 }
 
+/* Left Section */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.contact-mainsection {
+  > h1 {
+    font-size: 4rem;
+  }
+  > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.email-address p,
+.phone-number p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Right section */
 .form-container {
   background-color: #ffffff;
   display: flex;
@@ -310,5 +339,28 @@ h6 {
   .right-section {
     width: 100%;
     padding: 0rem;
+  }
+
+  .left-section {
+    > p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .contact-mainsection {
+    > h1 {
+      font-size: 2rem;
+    }
+    > p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .email-address p,
+  .phone-number p {
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
